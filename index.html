@@ -3,14 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
+	<div class="container text-center my-4">
+		<h1 class="py-2">Papier, kamień, nożyce</h1>
+		<h2 class="py-2">Witaj, zagrajmy w Japońską grę "Jan-ken-pon"</h2>
+		<p class="py-2">Gra składa się z kolejnych tur. W każdej turze obydwaj gracze,
+			na umówiony sygnał, szybko wystawiają przed siebie dłoń,
+			pokazującą symbol papieru, kamienia lub nożyc.
+			Gracz, który pokazał silniejszy symbol, otrzymuje jeden punkt.
+			W przypadku pokazania dwóch takich samych symboli następuje remis – punktu brak
+		</p>
+		<img class="my-2 mx-auto d-block" 
+			src="https://i.postimg.cc/zDVQrQyH/Rock-paper-scissors-Polish.jpg" 
+			alt="Zasady gry: nożyce są silniejsze od papieru, ponieważ go tną,
+			kamień jest silniejszy od nożyc, ponieważ je tępi,
+			papier jest silniejszy od kamienia, ponieważ go owija."
+		>	
 		<div id="buttons"></div>
-			<button type="button" id="button-rock">Kamień</button>
-			<button type="button" id="button-paper">Papier</button>
-			<button type="button" id="button-scissors">Nożyce</button>
+			<button class="btn btn-outline-primary" type="button" id="button-rock">Kamień</button>
+			<button class="btn btn-outline-primary" type="button" id="button-paper">Papier</button>
+			<button class="btn btn-outline-primary" type="button" id="button-scissors">Nożyce</button>
 		<div id="messages"></div>
 	</div>
 	<script src="js/functions.js"></script>
