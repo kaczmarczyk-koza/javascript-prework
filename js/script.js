@@ -1,10 +1,6 @@
 
 
-var argButtonName, button_scissors, buttonPaper, buttonRock, buttonScissors, buttonTest, numberRund, numberPlayer, numberPlayer;
-
-numberRund = 0; 
-numberPlayer = 0;
-numberComputer = 0;
+let buttonPaper, buttonRock, buttonScissors, numberRund= 0, numberPlayer = 0, numberComputer = 0;
 
 /**
  * Describe this function...
@@ -14,7 +10,7 @@ function buttonClicked(argButtonName) {
   console.log(argButtonName + ' został kliknięty');
   
   
-  var computerMove, playerInput, playerMove, randomNumber;
+  let computerMove, playerMove, randomNumber;
   
   /**
    * Describe this function...
@@ -38,7 +34,7 @@ function buttonClicked(argButtonName) {
    * Describe this function...
    */
   function displayResult(argPlayerMove, argComputerMove) {
-    console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
+        console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
  
     if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
       printMessage('Wygrywasz!');
@@ -60,7 +56,6 @@ function buttonClicked(argButtonName) {
     printMessage('Komputer (' + numberComputer + ' : ' + numberPlayer + ') Ty')
   }
   playerMove = argButtonName;
-  console.log('wybór ruchu gracza to: ' + playerInput);
 
   console.log('ruch gracza to: ' + playerMove);
   randomNumber = Math.floor(Math.random() * 3 + 1);
